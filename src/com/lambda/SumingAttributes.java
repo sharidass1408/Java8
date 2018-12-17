@@ -14,7 +14,8 @@ public class SumingAttributes {
 		componentList.add(new Component(8));
 		componentList.add(new Component(4));
 		
-		componentList.stream().mapToDouble(com -> com.getPrice()).sum();
+		double sum = componentList.stream().mapToDouble(com -> com.getPrice()).sum();
+		System.out.println("Sum of all the component List: " + sum);
 		
 	}
 
